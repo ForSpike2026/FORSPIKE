@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ===== SEO ===== -->
+<title>FORSPIKE | Precision. Strength. Vision. Est. 2026</title>
+<meta name="description" content="FORSPIKE is a modern brand built on precision, strength and vision. Discover our services, our story and how we can help you rise above the rest.">
+<meta name="keywords" content="FORSPIKE, forspike brand, precision services, strategy, digital solutions">
+<meta name="author" content="FORSPIKE">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://forspike2026.github.io/FORSPIKE/">
+<meta name="theme-color" content="#0b1424">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FORSPIKE">
+<meta property="og:title" content="FORSPIKE | Precision. Strength. Vision.">
+<meta property="og:description" content="Modern brand built on precision, strength and vision. Est. 2026.">
+<meta property="og:url" content="https://forspike2026.github.io/FORSPIKE/">
+<meta property="og:image" content="https://forspike2026.github.io/FORSPIKE/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FORSPIKE">
+<meta name="twitter:description" content="Precision. Strength. Vision.">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FORSPIKE",
+  "url": "https://forspike2026.github.io/FORSPIKE/",
+  "logo": "https://forspike2026.github.io/FORSPIKE/logo.png",
+  "foundingDate": "2026",
+  "description": "FORSPIKE is a modern brand built on precision, strength and vision.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "email": "hello@forspike.com"
+  }
+}
+</script>
+
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy-900: #0b1424;
+    --navy-800: #111d33;
+    --navy-700: #1a2a46;
+    --gold-400: #e8c77a;
+    --gold-500: #c9a45a;
+    --gold-600: #9c7a3c;
+    --text: #e9ecf3;
+    --muted: #9aa6bd;
+    --radius: 14px;
+    --shadow: 0 20px 50px rgba(0,0,0,.35);
+    --serif: 'Cinzel', 'Times New Roman', serif;
+    --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--text);
+    background: radial-gradient(1200px 600px at 70% -10%, var(--navy-700), var(--navy-900));
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  img, svg { max-width: 100%; display: block; }
+  a { color: var(--gold-400); text-decoration: none; }
+  a:hover { color: #fff; }
+  .wrap { width: min(1120px, 92%); margin: 0 auto; }
+  h1, h2, h3 { font-family: var(--serif); letter-spacing: .04em; line-height: 1.2; margin: 0 0 .5em; }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+  h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+  h3 { font-size: 1.15rem; color: var(--gold-400); }
+  p { color: var(--muted); margin: 0 0 1em; }
+  .gold-text {
+    background: linear-gradient(120deg, var(--gold-600), var(--gold-400) 45%, var(--gold-500));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .eyebrow { font-size: .8rem; letter-spacing: .25em; text-transform: uppercase; color: var(--gold-500); }
+  section { padding: 96px 0; }
+  .section-alt { background: rgba(255,255,255,.02); border-top: 1px solid rgba(201,164,90,.12); border-bottom: 1px solid rgba(201,164,90,.12); }
+  .center { text-align: center; }
+  .btn {
+    display: inline-block; padding: .85rem 1.6rem; border-radius: 999px; font-weight: 600;
+    border: 1px solid var(--gold-500); cursor: pointer; font-family: var(--sans); font-size: .95rem;
+    transition: transform .2s, background .2s, color .2s;
+  }
+  .btn-primary { background: linear-gradient(120deg, var(--gold-600), var(--gold-400)); color: var(--navy-900); border-color: transparent; }
+  .btn-primary:hover { transform: translateY(-2px); color: var(--navy-900); }
+  .btn-ghost { background: transparent; color: var(--gold-400); }
+  .btn-ghost:hover { background: rgba(201,164,90,.12); color: #fff; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(12px); background: rgba(11,20,36,.7);
+    border-bottom: 1px solid rgba(201,164,90,.15);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .logo { display: flex; align-items: center; gap: .6rem; font-family: var(--serif); font-weight: 700; font-size: 1.2rem; letter-spacing: .15em; color: var(--text); }
+  .logo svg { width: 34px; height: 34px; }
+  .nav-links { display: flex; gap: 1.6rem; align-items: center; }
+  .nav-links a { color: var(--text); font-size: .92rem; opacity: .85; }
+  .nav-links a:hover { color: var(--gold-400); opacity: 1; }
+  .menu-btn { display: none; background: none; border: 1px solid var(--gold-500); color: var(--gold-400); border-radius: 8px; padding: .4rem .7rem; cursor: pointer; }
+
+  /* Hero */
+  .hero { padding: 110px 0 90px; text-align: center; position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(90deg, transparent 0 79px, rgba(201,164,90,.04) 80px);
+  }
+  .hero .emblem { width: 150px; height: 150px; margin: 0 auto 28px; }
+  .hero p.lead { font-size: 1.15rem; max-width: 620px; margin: 0 auto 2rem; }
+  .hero .cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .est { margin-top: 2.5rem; font-size: .75rem; letter-spacing: .35em; color: var(--gold-600); }
+
+  /* Cards */
+  .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 48px; }
+  .card {
+    background: linear-gradient(180deg, rgba(26,42,70,.6), rgba(17,29,51,.6));
+    border: 1px solid rgba(201,164,90,.18); border-radius: var(--radius);
+    padding: 32px 28px; box-shadow: var(--shadow); transition: transform .25s, border-color .25s;
+  }
+  .card:hover { transform: translateY(-6px); border-color: var(--gold-500); }
+  .card .icon { font-size: 1.8rem; margin-bottom: 14px; }
+
+  /* About split */
+  .split { display: grid; gap: 56px; grid-template-columns: 1fr 1fr; align-items: center; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+  .stat { text-align: center; padding: 18px 8px; border: 1px solid rgba(201,164,90,.2); border-radius: 12px; }
+  .stat strong { display: block; font-family: var(--serif); font-size: 1.8rem; color: var(--gold-400); }
+  .stat span { font-size: .8rem; color: var(--muted); }
+  .panel { border-radius: 20px; padding: 40px; background: var(--navy-800); border: 1px solid rgba(201,164,90,.25); box-shadow: var(--shadow); }
+
+  /* Pricing */
+  .plan.featured { border-color: var(--gold-500); transform: scale(1.03); }
+  .price { font-family: var(--serif); font-size: 2.2rem; color: var(--text); margin: 12px 0 18px; }
+  .price small { font-size: .9rem; color: var(--muted); font-family: var(--sans); }
+  .plan ul { list-style: none; padding: 0; margin: 0 0 24px; }
+  .plan li { padding: 6px 0; color: var(--muted); border-bottom: 1px dashed rgba(201,164,90,.15); }
+  .plan li::before { content: "✦ "; color: var(--gold-500); }
+
+  /* Contact */
+  .contact-form { display: grid; gap: 14px; }
+  .field label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 6px; }
+  .field input, .field textarea {
+    width: 100%; padding: .85rem 1rem; border-radius: 10px; font: inherit; color: var(--text);
+    background: var(--navy-900); border: 1px solid rgba(201,164,90,.25);
+  }
+  .field input:focus, .field textarea:focus { outline: none; border-color: var(--gold-500); }
+  .field textarea { min-height: 120px; resize: vertical; }
+  .toast { margin-top: 10px; color: var(--gold-400); min-height: 1.4em; font-size: .9rem; }
+
+  footer { border-top: 1px solid rgba(201,164,90,.15); padding: 40px 0; text-align: center; color: var(--muted); font-size: .85rem; }
+  footer .links { display: flex; gap: 20px; justify-content: center; margin-bottom: 14px; flex-wrap: wrap; }
+
+  /* Preview simulator */
+  .simulator { padding: 72px 0; background: #070d1a; border-top: 1px solid rgba(201,164,90,.15); }
+  .sim-controls { display: flex; gap: 10px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
+  .sim-controls button {
+    background: transparent; color: var(--muted); border: 1px solid rgba(201,164,90,.3);
+    padding: .5rem 1rem; border-radius: 999px; cursor: pointer; font: inherit; font-size: .85rem;
+  }
+  .sim-controls button.active { background: var(--gold-500); color: var(--navy-900); border-color: var(--gold-500); }
+  .sim-stage { display: flex; justify-content: center; }
+  .sim-frame {
+    width: 100%; max-width: 1100px; height: 460px; border-radius: 16px; overflow: hidden;
+    border: 10px solid #1d2a40; box-shadow: var(--shadow); background: var(--navy-900);
+    transition: max-width .4s ease, height .4s ease;
+  }
+  .sim-frame.tablet { max-width: 768px; height: 520px; }
+  .sim-frame.mobile { max-width: 380px; height: 560px; border-radius: 34px; border-width: 12px; }
+  .sim-inner { width: 100%; height: 100%; overflow-y: auto; }
+  .sim-inner .mini-hero { padding: 40px 20px; text-align: center; }
+  .sim-inner .mini-hero h3 { font-size: 1.4rem; }
+  .sim-inner .mini-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; padding: 0 20px 24px; }
+  .sim-inner .mini-cards div { border: 1px solid rgba(201,164,90,.2); border-radius: 10px; padding: 14px; font-size: .8rem; color: var(--muted); }
+  .sim-caption { text-align: center; margin-top: 14px; font-size: .8rem; color: var(--muted); }
+
+  /* Animations & graphics */
+  #particles { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+  .hero > .wrap { position: relative; z-index: 1; }
+  .hero .emblem { filter: drop-shadow(0 0 24px rgba(232,199,122,.35)); }
+  .hero h1.gold-text { background-size: 200% auto; animation: shimmer 6s ease-in-out infinite; }
+  @keyframes shimmer { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .spear {
+    transform-origin: 75px 75px;
+    animation: spearIn 1.4s cubic-bezier(.2,.8,.2,1) both, spearFloat 4s ease-in-out 1.4s infinite;
+  }
+  @keyframes spearIn { from { opacity: 0; transform: translateY(30px) scale(.6); } to { opacity: 1; transform: none; } }
+  @keyframes spearFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  .ring-dash { stroke-dasharray: 10 6; transform-origin: 75px 75px; animation: spin 20s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .card .icon { display: inline-block; animation: bob 3.2s ease-in-out infinite; }
+  .card:nth-child(2) .icon { animation-delay: .4s; }
+  .card:nth-child(3) .icon { animation-delay: .8s; }
+  .card:nth-child(4) .icon { animation-delay: 1.2s; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+  .btn-primary { position: relative; overflow: hidden; }
+  .btn-primary::after {
+    content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,.45), transparent);
+    transform: skewX(-20deg); animation: sheen 3.5s ease-in-out infinite;
+  }
+  @keyframes sheen { 0%,60% { left: -75%; } 100% { left: 125%; } }
+  .reveal { opacity: 0; translate: 0 28px; transition: opacity .8s ease, translate .8s cubic-bezier(.2,.8,.2,1); }
+  .reveal.in { opacity: 1; translate: 0 0; }
+  .card { transition: transform .2s ease, border-color .25s; }
+  .stat strong { transition: color .3s; }
+  .stat:hover strong { color: #fff; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; translate: none; }
+    .spear, .ring-dash, .card .icon, .btn-primary::after, .hero h1.gold-text { animation: none !important; }
+  }
+
+  /* Responsive */
+  @media (max-width: 860px) {
+    .split { grid-template-columns: 1fr; gap: 36px; }
+    .plan.featured { transform: none; }
+    section { padding: 72px 0; }
+  }
+  @media (max-width: 720px) {
+    .menu-btn { display: block; }
+    .nav-links {
+      position: absolute; top: 72px; left: 0; right: 0; flex-direction: column;
+      background: var(--navy-900); padding: 20px; border-bottom: 1px solid rgba(201,164,90,.2);
+      display: none;
+    }
+    .nav-links.open { display: flex; }
+    .stats { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+  .hero .emblem { width: 200px; height: 200px; margin: 0 auto 28px; animation: logoIn 1.2s cubic-bezier(.2,.8,.2,1) both, logoFloat 5s ease-in-out 1.2s infinite; }
+  .logo img { width: 44px; height: 44px; border-radius: 50%; }
+  @keyframes logoIn { from { opacity: 0; transform: scale(.7) rotate(-8deg); } to { opacity: 1; transform: none; } }
+  @keyframes logoFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @media (prefers-reduced-motion: reduce) { .hero .emblem { animation: none !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="FORSPIKE home"><img src="logo-small.png" alt="FORSPIKE logo" width="44" height="44">
+      FORSPIKE
+    </a>
+    <nav class="nav-links" id="nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#preview">Preview</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="#contact" style="padding:.5rem 1.1rem">Get Started</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <img class="emblem" src="logo.png" alt="FORSPIKE seal logo" width="200" height="200">
+      <div class="eyebrow">Precision · Strength · Vision</div>
+      <h1 id="hero-title" class="gold-text">FORSPIKE</h1>
+      <p class="lead">We cut through the noise. FORSPIKE delivers focused, high-impact solutions that help ambitious people and businesses move with precision.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">Start a Project</a>
+        <a class="btn btn-ghost" href="#services">Explore Services</a>
+      </div>
+      <div class="est">EST. 2026</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-alt" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">What we do</div>
+        <h2 id="services-title">Our Services</h2>
+        <p style="max-width:560px;margin:0 auto">Every engagement starts with a clear target and ends with measurable results.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="icon">🎯</div><h3>Strategy</h3><p>Sharp positioning and roadmaps that point your efforts at the outcomes that matter.</p></article>
+        <article class="card"><div class="icon">⚙️</div><h3>Digital Build</h3><p>Fast, accessible, search-friendly websites and products engineered for growth.</p></article>
+        <article class="card"><div class="icon">📈</div><h3>Growth &amp; SEO</h3><p>Technical SEO, content strategy and analytics that turn visibility into customers.</p></article>
+        <article class="card"><div class="icon">🛡️</div><h3>Brand Identity</h3><p>Distinctive visual systems with the gravitas and craft of a classic crest.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow">Our story</div>
+        <h2 id="about-title">Founded in 2026 to <span class="gold-text">strike true</span></h2>
+        <p>FORSPIKE was built on a simple belief: the most effective work is the most precise. Like a spearhead, we focus all our force on a single point.</p>
+        <p>Our team combines strategy, design and engineering so every project moves from idea to impact without wasted motion.</p>
+        <div class="stats">
+          <div class="stat"><strong>2026</strong><span>Established</span></div>
+          <div class="stat"><strong>100%</strong><span>Focused work</span></div>
+          <div class="stat"><strong>24h</strong><span>Response time</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Our Principles</h3>
+        <p><strong style="color:var(--text)">Precision:</strong> Measure twice, strike once.</p>
+        <p><strong style="color:var(--text)">Strength:</strong> Built to last under pressure.</p>
+        <p><strong style="color:var(--text)">Vision:</strong> Plan for where you are going, not just where you are.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section-alt" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">Plans</div>
+        <h2 id="pricing-title">Simple, Transparent Pricing</h2>
+      </div>
+      <div class="grid">
+        <article class="card plan">
+          <h3>Starter</h3>
+          <div class="price">$499 <small>one-time</small></div>
+          <ul><li>One-page brand site</li><li>Basic SEO setup</li><li>Mobile responsive</li></ul>
+          <a class="btn btn-ghost" href="#contact">Choose Starter</a>
+        </article>
+        <article class="card plan featured">
+          <h3>Pro</h3>
+          <div class="price">$1,499 <small>one-time</small></div>
+          <ul><li>Up to 6 pages</li><li>Full technical SEO</li><li>Analytics dashboard</li><li>Priority support</li></ul>
+          <a class="btn btn-primary" href="#contact">Choose Pro</a>
+        </article>
+        <article class="card plan">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <ul><li>Unlimited pages</li><li>Custom integrations</li><li>Dedicated team</li></ul>
+          <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW SIMULATOR -->
+  <section id="preview" class="simulator" aria-labelledby="preview-title">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">Responsive preview</div>
+        <h2 id="preview-title">See It On Any Screen</h2>
+      </div>
+      <div class="sim-controls" role="group" aria-label="Choose device">
+        <button class="active" data-device="desktop">Desktop</button>
+        <button data-device="tablet">Tablet</button>
+        <button data-device="mobile">Mobile</button>
+      </div>
+      <div class="sim-stage">
+        <div class="sim-frame" id="simFrame">
+          <div class="sim-inner">
+            <div class="mini-hero">
+              <div class="eyebrow">Precision · Strength · Vision</div>
+              <h3 class="gold-text">FORSPIKE</h3>
+              <p style="font-size:.85rem">Focused solutions for ambitious brands.</p>
+              <a class="btn btn-primary" style="padding:.5rem 1.1rem;font-size:.8rem" href="#contact">Start a Project</a>
+            </div>
+            <div class="mini-cards">
+              <div><strong style="color:var(--gold-400)">Strategy</strong><br>Positioning and roadmaps</div>
+              <div><strong style="color:var(--gold-400)">Digital Build</strong><br>Fast, accessible sites</div>
+              <div><strong style="color:var(--gold-400)">Growth &amp; SEO</strong><br>Visibility that converts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="sim-caption" id="simCaption">Showing: Desktop (1100px)</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap" style="max-width:720px">
+      <div class="center">
+        <div class="eyebrow">Get in touch</div>
+        <h2 id="contact-title">Let's Strike Your Target</h2>
+        <p>Tell us about your project and we will reply within 24 hours.</p>
+      </div>
+      <form class="contact-form panel" id="contactForm" novalidate>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="msg">Project details</label><textarea id="msg" name="message" required></textarea></div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+    <p style="margin:0">© 2026 FORSPIKE. All rights reserved. · hello@forspike.com</p>
+  </div>
+</footer>
+
+<script>
+  // Particle background
+  (function () {
+    const c = document.getElementById('particles');
+    if (!c || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const ctx = c.getContext('2d');
+    let w, h, pts = [];
+    function size() {
+      const r = c.parentElement.getBoundingClientRect();
+      w = c.width = r.width; h = c.height = r.height;
+      pts = Array.from({ length: Math.min(70, Math.floor(w * h / 16000)) }, () => ({
+        x: Math.random() * w, y: Math.random() * h,
+        vx: (Math.random() - .5) * .3, vy: -(Math.random() * .4 + .1),
+        r: Math.random() * 1.8 + .4
+      }));
+    }
+    function tick() {
+      ctx.clearRect(0, 0, w, h);
+      for (const p of pts) {
+        p.x += p.vx; p.y += p.vy;
+        if (p.y < -5) { p.y = h + 5; p.x = Math.random() * w; }
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(232,199,122,.55)'; ctx.fill();
+      }
+      requestAnimationFrame(tick);
+    }
+    size(); tick();
+    addEventListener('resize', size);
+  })();
+
+  // Scroll reveal
+  const targets = document.querySelectorAll('.card, .stat, .panel, section h2, .contact-form');
+  targets.forEach(el => el.classList.add('reveal'));
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .15 });
+  targets.forEach((el, i) => { el.style.transitionDelay = (i % 3) * 0.08 + 's'; io.observe(el); });
+
+  // Count-up stats
+  document.querySelectorAll('.stat strong').forEach(el => {
+    const m = el.textContent.match(/^(\d+)(.*)$/);
+    if (!m) return;
+    const end = +m[1], suffix = m[2];
+    const cio = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      cio.disconnect();
+      const t0 = performance.now();
+      const step = now => {
+        const p = Math.min((now - t0) / 1600, 1);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+    cio.observe(el);
+  });
+
+  // 3D tilt on service cards
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      card.style.transform = `perspective(800px) rotateX(${-y * 8}deg) rotateY(${x * 8}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+  });
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Device preview simulator
+  const frame = document.getElementById('simFrame');
+  const caption = document.getElementById('simCaption');
+  const sizes = { desktop: 'Desktop (1100px)', tablet: 'Tablet (768px)', mobile: 'Mobile (380px)' };
+  document.querySelectorAll('[data-device]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const device = btn.dataset.device;
+      document.querySelectorAll('[data-device]').forEach(b => b.classList.toggle('active', b === btn));
+      frame.className = 'sim-frame' + (device === 'desktop' ? '' : ' ' + device);
+      caption.textContent = 'Showing: ' + sizes[device];
+    });
+  });
+
+  // Contact form (client-side validation; connect to your backend or form service)
+  const form = document.getElementById('contactForm');
+  const toast = document.getElementById('toast');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    const valid = data.name.trim() && /^\S+@\S+\.\S+$/.test(data.email) && data.message.trim();
+    toast.textContent = valid
+      ? 'Thank you. Your message has been received.'
+      : 'Please complete all fields with a valid email.';
+    if (valid) form.reset();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://forspike2026.github.io/FORSPIKE/sitemap.xml
